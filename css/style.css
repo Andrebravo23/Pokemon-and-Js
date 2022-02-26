@@ -1,0 +1,143 @@
+html {
+    font-family: 'Pokemon Pixel Font', monospace;
+    font-size: 62.5%;
+    color: white;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix::before, .clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix, .clearfix::after {
+    clear: both;
+}
+
+.flex-container {
+    display: flex;
+    background: black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    padding: 10px 20px;
+    background: url(../assets/img/BACKGROUND.png);
+    border-radius: 5px;
+}
+
+.data-container {
+    width: 240px;
+    height: 468px;
+    background: url(../assets/img/PKMNDATA.png);
+    margin: 10px 10px 10px 0;
+}
+
+.data-animation {
+    height: 42px;
+    background: url(../assets/img/DATA-ANIM.gif);
+}
+
+.pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 192px;
+    width: 192px;
+}
+
+.info-container {
+    margin-top: 21px;
+    padding: 0 20px;
+}
+
+.info-container h2, h3, h5 {
+    text-shadow: 3px 3px 0 black;
+    line-height: .9;
+    font-weight: 400;
+    margin: 0;
+}
+
+.info-container h2 {
+    font-size: 45px;
+    padding-top: 8px;
+}
+
+.info-container img {
+    padding-left: 10px;
+}
+
+.info-container h3 {
+    display: inline-block;
+    font-size: 45px;
+    padding-left: 10px;
+}
+
+.info-container h5 {
+    font-size: 35px;
+    padding-top: 5px;
+}
+
+.party-btn {
+    float: left;
+}
+
+.close-btn {
+    float: right;
+    margin: 3px 0 6px 0;
+}
+
+.arrow {
+    margin: 9px 0;
+}
+
+.box-indicator {
+    display: inline-block;
+    background: url(../assets/img/BOX-INDICATOR-1.png);
+    width: 372px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.box-indicator h4 {
+    display: inline;
+    text-shadow: 3px 3px 0 black;
+    line-height: 66px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.pokemon-box {
+    background: url(../assets/img/BOX-1.png);
+    width: 468px;
+    height: 348px;
+    margin-top: 5px;
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat(6, 16.66%);
+    padding: 0 15px;
+}
+
+.pokeicon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokeicon {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
